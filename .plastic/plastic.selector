@@ -1,0 +1,4 @@
+repository "CSC-227-Richard-And-The-Magic-Peanuts@Nyqvuist@cloud"
+  path "/"
+    br "/main"
+    co "/main"
