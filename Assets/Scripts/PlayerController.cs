@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
         jump = false;
         facingRight = true;
         anim = GetComponent<Animator>();
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame - used for button/key presses

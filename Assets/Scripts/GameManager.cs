@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Debug.Log("Game Manager is up.");
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public void Awake()
