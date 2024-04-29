@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,6 +18,21 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
 
     private float horizontalMotion, verticalMotion;
+
+    public static Action<float> OnUpgradeApply;
+
+    private void OnEnable()
+    {
+
+        OnUpgradeApply += upgradeApply;
+    }
+
+    private void OnDisable()
+    {
+
+        OnUpgradeApply -= upgradeApply;
+    }
+
 
     // Use this for initialization
     void Start()
@@ -81,6 +97,49 @@ public class PlayerController : MonoBehaviour
         Vector3 playerScale = this.transform.localScale;
         playerScale.x *= -1;
         this.transform.localScale = playerScale;
+    }
+
+    // Power up code goes here to change player stats.
+    void upgradeApply(float f) {
+
+        switch (f) {
+
+            case 1:
+                Debug.Log(f);
+                break;
+            case 2:
+                Debug.Log(f);
+                break;
+            case 3:
+                Debug.Log(f);
+                break;
+            case 4:
+                Debug.Log(f);
+                break;
+            case 5:
+                Debug.Log(f);
+                break;
+            case 6:
+                Debug.Log(f);
+                break;
+            case 7:
+                Debug.Log(f);
+                break;
+            case 8:
+                Debug.Log(f);
+                break;
+            case 9:
+                Debug.Log(f);
+                break;
+            case 10:
+                Debug.Log(f);
+                break;
+            default:
+                Debug.Log("Nothing Happens");
+                break;
+
+        }
+    
     }
 
 }

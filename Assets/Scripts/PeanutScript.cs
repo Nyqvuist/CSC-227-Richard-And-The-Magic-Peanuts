@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PeanutScript : MonoBehaviour
 {
+
+    float result;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +21,11 @@ public class PeanutScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // On pick up, generates random number, dependant on number, a powerup is given.
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("+1");
+            result = Random.Range(1, 11);
+            PlayerController.OnUpgradeApply(result);
             Destroy(transform.parent.gameObject);
 
         }

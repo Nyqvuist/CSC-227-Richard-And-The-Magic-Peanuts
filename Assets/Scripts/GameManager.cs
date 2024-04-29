@@ -8,22 +8,19 @@ public class GameManager : MonoBehaviour
 
     private static GameManager instance;
 
-    private float points;
-
     private float died;
 
-    public static Action<float> OnPointsUpdate;
     public static Action OnDeathUpdate;
 
     private void OnEnable()
     {
-        OnPointsUpdate += increasePoints;
+        
         OnDeathUpdate += increaseDeath;
     }
 
     private void OnDisable()
     {
-        OnPointsUpdate -= increasePoints;
+        
         OnDeathUpdate -= increaseDeath;
     }
 
@@ -49,11 +46,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void increasePoints(float p) {
-
-        points += p;
-    
-    }
 
     private void increaseDeath()
     {
