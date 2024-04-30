@@ -140,7 +140,7 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 64
-  isGrounded: 0
+  isGrounded: 1
 --- !u!50 &6922592236090181426
 Rigidbody2D:
   serializedVersion: 4
