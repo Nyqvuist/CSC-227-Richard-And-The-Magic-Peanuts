@@ -27,7 +27,7 @@ public class PeanutScript : MonoBehaviour
             result = Random.Range(1, 11);
             PlayerController.OnUpgradeApply(result);
             Destroy(transform.parent.gameObject);
-
+            //Audio Here
         }
     }
 }
