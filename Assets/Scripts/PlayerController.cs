@@ -200,6 +200,11 @@ public class PlayerController : MonoBehaviour
         {
             jump = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            anim.SetTrigger("Throwing");
+        }
     }
 
     void FixedUpdate()
@@ -258,6 +263,11 @@ public class PlayerController : MonoBehaviour
         this.transform.localScale = playerScale;
     }
 
+    void TriggerThrow() {
+
+        BulletSpawner.OnThrow();
+    }
+
     // Power up code goes here to change player stats.
     void upgradeApply(float f)
     {
@@ -266,13 +276,13 @@ public class PlayerController : MonoBehaviour
         {
 
             case 1:
-                Debug.Log(f);
+                speed *= 2;
                 break;
             case 2:
-                Debug.Log(f);
+                speed /= 2;
                 break;
             case 3:
-                Debug.Log(f);
+                jumpForce *= 1.2f;
                 break;
             case 4:
                 Debug.Log(f);

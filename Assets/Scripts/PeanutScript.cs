@@ -22,7 +22,7 @@ public class PeanutScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // On pick up, generates random number, dependant on number, a powerup is given.
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Richard")
         {
             result = Random.Range(1, 11);
             AudioSource audio = GetComponent<AudioSource>();

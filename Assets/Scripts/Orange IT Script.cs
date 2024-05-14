@@ -53,4 +53,5 @@ public class EnemyAI2D : MonoBehaviour
         // Implement attack behavior here, such as reducing player health
         Debug.Log("Attacking Player!");
     }
+
 }

@@ -219,7 +219,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.9141755
+  orthographic size: 8.878032
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -244,69 +244,12 @@ Transform:
   m_GameObject: {fileID: 163849797}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28, y: -0.05, z: -10}
+  m_LocalPosition: {x: 0.06, y: -1.44, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &215657878
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 622528971858928771, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_Name
-      value: Richard
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.5474696
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.6680627
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7370383415652078673, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 88d8ac31befe7094baad28bdf912cce5, type: 3}
 --- !u!1 &380269519
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,4 +796,3 @@ SceneRoots:
   - {fileID: 380269521}
   - {fileID: 163849801}
   - {fileID: 1625971372}
-  - {fileID: 215657878}
