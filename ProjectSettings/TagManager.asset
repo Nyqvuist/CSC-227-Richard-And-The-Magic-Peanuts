@@ -13,6 +13,7 @@ TagManager:
   - Floor
   - Desk
   - Platform
+  - Purple Monitor
   layers:
   - Default
   - TransparentFX
