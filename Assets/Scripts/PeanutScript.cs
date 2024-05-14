@@ -24,6 +24,7 @@ public class PeanutScript : MonoBehaviour
         // On pick up, generates random number, dependant on number, a powerup is given.
         if (collision.gameObject.tag == "Richard")
         {
+            GameManager.count += 1;
             result = Random.Range(1, 11);
             AudioSource audio = GetComponent<AudioSource>();
             PlayerController.OnUpgradeApply(result);

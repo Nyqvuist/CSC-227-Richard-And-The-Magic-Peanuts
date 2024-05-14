@@ -276,15 +276,15 @@ public class PlayerController : MonoBehaviour
         {
 
             case 1:
-                speed *= 2;
+                speed *= 1.2f;
                 break;
             case 2:
-                speed /= 2;
+                speed /= 1.2f;
                 break;
             case 3:
                 jumpForce *= 1.2f;
                 break;
-            case 4:
+            /*case 4:
                 Debug.Log(f);
                 break;
             case 5:
@@ -304,7 +304,7 @@ public class PlayerController : MonoBehaviour
                 break;
             case 10:
                 Debug.Log(f);
-                break;
+                break;*/
             default:
                 Debug.Log("Nothing Happens");
                 break;

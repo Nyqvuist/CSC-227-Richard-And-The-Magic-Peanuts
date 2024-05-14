@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     private float died;
 
+    public static int count = 0;
+
     public static Action OnDeathUpdate;
 
     private void OnEnable()
