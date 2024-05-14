@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Peanut
+  - Blue IT
+  - Green IT
+  - Orange IT
+  - Richard
+  - Computer Screen
+  - Floor
+  - Desk
+  - Platform
+  - Purple Monitor
   layers:
   - Default
   - TransparentFX

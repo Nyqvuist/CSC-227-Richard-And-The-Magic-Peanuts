@@ -25,9 +25,9 @@ public class PeanutScript : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             result = Random.Range(1, 11);
+            AudioSource audio = GetComponent<AudioSource>();
             PlayerController.OnUpgradeApply(result);
             Destroy(transform.parent.gameObject);
-
         }
     }
 }
