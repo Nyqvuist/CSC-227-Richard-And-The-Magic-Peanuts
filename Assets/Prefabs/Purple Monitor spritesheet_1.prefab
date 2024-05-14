@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 574650403769129642}
   - component: {fileID: 7807527025039741021}
   - component: {fileID: 6807360108695272540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Purple Monitor spritesheet_1
   m_TagString: Purple Monitor
   m_Icon: {fileID: 0}
