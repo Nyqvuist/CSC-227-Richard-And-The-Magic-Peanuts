@@ -36,5 +36,15 @@ public class Bullet : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }
+        if (collision.gameObject.tag == "Green IT")
+        {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.tag == "Blue IT")
+        {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }
