@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 
+    AudioSource source;
     public float speed;
     public Rigidbody2D rb;
     private float horizontalMotion;
@@ -45,6 +46,12 @@ public class Bullet : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
+        }
+        if (collision.gameObject.tag == "Purple Monitor")
+        {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+            source.Play();
         }
     }
 }

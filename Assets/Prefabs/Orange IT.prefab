@@ -195,3 +195,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRange: 3
   moveSpeed: 3
+  laserPrefab: {fileID: 697448746426884584, guid: 1014ce58d1d2fbe49bc6a3aaa5bed5aa, type: 3}
