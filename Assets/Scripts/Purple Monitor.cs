@@ -2,17 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PurpleMonitor : MonoBehaviour
+public class FinalBoss : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float delayBeforeDeletingPlayer = 15f; // Time to wait before deleting the player
+
+    private Transform player;
+    private bool hasDeletedPlayer = false;
+    private float startTime;
+
     void Start()
     {
-        
+        // Find the player object by tag
+        player = GameObject.FindGameObjectWithTag("Richard").transform;
+
+        if (player != null)
+        {
+            Debug.Log("Player found. Starting delay before deleting player.");
+            // Record the start time
+            startTime = Time.time;
+        }
+        else
+        {
+            Debug.LogError("Player not found. Ensure that the player object is tagged as 'Richard'.");
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
     }
 }
